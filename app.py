@@ -31,7 +31,9 @@ def main():
         day_ip =  calendar_ip.day
         month_ip = calendar_ip.month
         year_ip = calendar_ip.year
-        time_hr_ip = st.text_input("TIME IN HR","")
+        time_hr_ip = st.selectbox("HOUR",
+					['1', '2', '3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24'])
+
         time_min_ip = st.slider("MINUTES", 1, 59)
         result = ""
         if st.button("Predict"):
